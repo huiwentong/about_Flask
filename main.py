@@ -59,4 +59,4 @@ if __name__ == '__main__':
         print(url_for('arg', id=3))
         print(url_for('login', test='/'))
         print(url_for('hello', name="huiwentong"))
-    # app.run(host="192.168.100.105", debug=True, port=24217)
+    app.run(host="192.168.100.105", debug=True, port=24217)
