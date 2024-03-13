@@ -28,9 +28,6 @@ def arg(id):
 # 也可以使用
 # @app.get('/login')
 # @app.post('/login')
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    return 'login'
 
 @app.route('/abort')
 def abort_test():
