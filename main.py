@@ -54,6 +54,7 @@ def hello(name=None):
 
 @app.route('/index', methods=['GET'])
 def index_session():
+    print(session)
     if 'username' in session:
         return 'Logged in as %s' % session['username']
     return 'you are not logged in'
