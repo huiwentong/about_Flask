@@ -37,11 +37,11 @@ def abort_test():
 # 也可以使用这种方式 @app.get('/')
 @app.route('/', methods=['GET'])
 def index():
-    return redirect(url_for('hello', name='huiwentong'))
+    return redirect("/hello/huiwentong")
 
 @app.route('/redirect', methods=['GET'])
 def redirect():
-    return redirect(url_for('abort'))
+    return redirect(url_for('abort_test'))
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -59,4 +59,4 @@ if __name__ == '__main__':
         print(url_for('arg', id=3))
         print(url_for('login', test='/'))
         print(url_for('hello', name="huiwentong"))
-    app.run(host="192.168.100.105", debug=True, port=24217)
+    # app.run(host="192.168.100.105", debug=True, port=24217)
