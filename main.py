@@ -40,7 +40,7 @@ def index():
     return redirect("/hello/huiwentong")
 
 @app.route('/redirect', methods=['GET'])
-def redirect():
+def redirect_test():
     return redirect(url_for('abort_test'))
 
 @app.errorhandler(404)
