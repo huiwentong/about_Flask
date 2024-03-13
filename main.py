@@ -5,7 +5,7 @@
 @EMAIL   ：wentong.hui@pearlstudio.com
 @Date    ：2024/3/13 15:48 
 '''
-from flask import Flask, url_for, render_template, request, validate, make_response
+from flask import Flask, url_for, render_template, request, make_response
 from werkzeug.utils import secure_filename
 
 # url_for 是用来做测试的，测试路由中的url地址，一般搭配app.test_request_context来使用
